@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+</head>
+<body>
+
+    <!-- 스프링서버 실행 후: http://127.0.0.1:8080/day02/index.html -->
+    <h3> 업체용 대기명단 관리 프로그램 </h3>
+    <div> <!-- 레이아웃(구역)-->
+        전화번호: <input type="text" class="phone" /> <br/> 
+            <!-- input입력상자, br줄바꿈 , class:마크업의식별자(복수) , id:마크업의식별자(단일) -->
+        방문 고객 수: <input type="text" class="customer" /> <br/>
+        <button onclick="waitingSave()"> 등록 </button> 
+            <!-- button클릭상자 , onclick="JS함수()"  : 해당 마크업을 클릭시 JS함수 발동  -->
+    </div>
+    <div>
+        <table border="1"> <!-- 테이블 -->
+            <thead> <!-- 제목구역 -->
+                <tr> <!-- 행 -->
+                    <th> 번호 </th> <th> 전화번호 </th> <th> 방문 고객 수 </th> <th> 비고 </th> <!-- 제목셀 -->
+                </tr>
+            </thead>
+            <tbody class="waitingList"> <!-- 본문구역-->
+                <tr>
+                    <td> 1 </td> <td> 010-0000-0000 </td> <td> 2 </td> 
+                    <td> <button>수정</button> <button>삭제</button> </td> <!-- 데이터셀(한칸)-->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+ 	
+<script src="practice.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,20 @@
+package example.practice.model.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class BaseDao {
+    private String url = "jdbc:mysql://127.0.0.1:3306/mydbpractice";
+    private String user = "root";
+    private String password = "123123";
+    
+    protected Connection conn; 
+    
+    private void connect( ){
+        try{    
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                conn = DriverManager.getConnection(url, user, password );
+        }catch( Exception e ){ System.out.println("DB연동실패" + e);}
+    }
+    protected BaseDao(){ connect(); }
+}
