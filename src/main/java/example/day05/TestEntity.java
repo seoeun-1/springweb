@@ -23,8 +23,8 @@ public class TestEntity extends BaseTime{
     private Integer no;
     @Column(name = "name", nullable = false , length = 100 , unique = true)
     private String name;
-    @Column(columnDefinition = "varchar(100) vot null default '제품설명' not null")
-    private String desc;
+    @Column(columnDefinition = "varchar(100)  default '제품설명' not null")
+    private String descri;
     @Column( insertable = true , updatable = true)
     private Integer price;
 }

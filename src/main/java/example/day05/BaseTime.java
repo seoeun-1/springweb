@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 public class BaseTime {
     //1. 레모드 생성시점
     @CreatedDate
-    private LocalDateTime createData;
+    private LocalDateTime createDate;
     //2. 레코드 변경시점
     @LastModifiedDate
     private LocalDateTime updateDate;
