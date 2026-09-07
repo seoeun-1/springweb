@@ -1,0 +1,34 @@
+/*package example.day06.미니프로젝트2DB설계;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Entity
+@Table(name = "category")
+@NoArgsConstructor@AllArgsConstructor@Builder@Data
+public class CategoryEntity extends BaseTime{
+    @Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    private Integer cno;
+    private String cname;
+
+    @OneToMany(mappedBy = "categoryEntity")
+    @ToString.Exclude
+    @Builder.Default
+    private List<ProductEntity> productList= new ArrayList<>();
+
+}
+*/
