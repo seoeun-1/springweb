@@ -1,4 +1,4 @@
-package example.day06;
+/*package example.day06;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,3 +24,4 @@ public class CategoryEntity {
     @Builder.Default // 만일 해당 entity
     private List<BoardEntity> boardList = new ArrayList<>();
 }
+*/

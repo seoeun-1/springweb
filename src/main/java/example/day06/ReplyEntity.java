@@ -1,4 +1,4 @@
-package example.day06;
+/*package example.day06;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;

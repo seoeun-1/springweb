@@ -1,4 +1,4 @@
-package example.day06;
+/*package example.day06;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,10 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Entity(name = "board")
-@Table@NoArgsConstructor@AllArgsConstructor@Builder@Data
+@Table@NoArgsConstructor@AllArgsConstructor@Builderpublic Object content(String content) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'content'");
+    }@Data
 public class BoardEntity {
     private Integer bno;
     private String bname;
@@ -29,4 +32,9 @@ public class BoardEntity {
     @ToString.Exclude
     @Builder.Default
     private List<ReplyEntity> replyList = new ArrayList<>();
+    public static Object builder() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'builder'");
+    }
 }
+*/
