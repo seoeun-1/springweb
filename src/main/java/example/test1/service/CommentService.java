@@ -1,13 +1,13 @@
-package example.test.service;
+package example.test1.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import example.test.model.dto.CommentDto;
-import example.test.model.entity.BoardEntity;
-import example.test.model.entity.CommentEntity;
-import example.test.model.repository.BoardRepository;
-import example.test.model.repository.CommentRepository;
+import example.test1.model.dto.CommentDto;
+import example.test1.model.entity.BoardEntity;
+import example.test1.model.entity.CommentEntity;
+import example.test1.model.repository.BoardRepository;
+import example.test1.model.repository.CommentRepository;
 
 @Service
 public class CommentService {
@@ -23,11 +23,11 @@ public class CommentService {
         return false;
     }
 
-    public boolean 댓글삭제( Integer commentId , String password ){
-        CommentEntity commentEntity = commentRepository.findById(commentId).orElse( null );
+    public boolean  댓글삭제( Integer commentId , String password ){ 
+        CommentEntity commentEntity = commentRepository.findById( commentId ).orElse( null );
         if( commentEntity != null ){
             if( commentEntity.getPassword().equals( password ) ){
-                commentRepository.deleteById(commentId);
+                commentRepository.deleteById( commentId );
                 return true;
             }
         }

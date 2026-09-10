@@ -1,4 +1,4 @@
-package example.test.service;
+package example.test1.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,19 +6,19 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import example.test.model.dto.BoardDto;
-import example.test.model.dto.CommentDto;
-import example.test.model.entity.BoardEntity;
-import example.test.model.repository.BoardRepository;
+import example.test1.model.dto.BoardDto;
+import example.test1.model.dto.CommentDto;
+import example.test1.model.entity.BoardEntity;
+import example.test1.model.repository.BoardRepository;
 
 @Service 
 public class BoardService {
     @Autowired private BoardRepository boardRepository;
 
     public boolean 게시물등록( BoardDto boardDto ){
-        BoardEntity boardEntity = boardDto.toEntity(); // dto --> entity 
-        BoardEntity savedEntity = boardRepository.save( boardEntity ); // entity save 
-        if( savedEntity.getId() >= 1 ) return true; // pk가 존재하면 성공 
+        BoardEntity boardEntity = boardDto.toEntity(); 
+        BoardEntity savedEntity = boardRepository.save( boardEntity ); 
+        if( savedEntity.getId() >= 1 ) return true; 
         return false;
     }
  

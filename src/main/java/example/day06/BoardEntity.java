@@ -16,7 +16,6 @@ import lombok.ToString;
 
 @Entity(name = "board")
 @Table@NoArgsConstructor@AllArgsConstructor@Builderpublic Object content(String content) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'content'");
     }@Data
 public class BoardEntity {

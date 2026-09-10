@@ -1,10 +1,10 @@
-package example.test.model.dto;
+package example.test1.model.dto;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import example.test.model.entity.BoardEntity;
+import example.test1.model.entity.BoardEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -1,14 +1,14 @@
-package example.test.model.dto;
+package example.test1.model.dto;
 
 import java.time.LocalDateTime;
 
-import example.test.model.entity.CommentEntity;
+import example.test1.model.entity.CommentEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor @AllArgsConstructor@Data@Builder 
+@NoArgsConstructor@AllArgsConstructor@Data@Builder 
 public class CommentDto {
     private Integer id;
     private String author;
@@ -35,7 +35,8 @@ public class CommentDto {
                 .password( entity.getPassword() )
                 .content( entity.getContent() )
                 .createdAt( entity.getCreatedAt() )
-                .updatedAt( entity.getUpdatedAt() )
+                .updatedAt ( entity.getUpdatedAt() )
                 .build();
     }
 }
+
