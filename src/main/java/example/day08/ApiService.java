@@ -27,10 +27,9 @@ public class ApiService {
     // [1]. 대구광역시 중구 맛집 현황 JSON
     public Map<String,Object> test1(){
         // 1. API 주소( 공공데이터 신청한 api 요청 url )
-        String url = "https://api.odcloud.kr/api/15052602/v1/uddi:855807e2-fe8a-4e47-8a5a-ce1894e410d7_201909031553";
-        url += "?page="+1;
-        url += "&perPage="+10;
-        url += "&serviceKey="+serviceKey;
+        String url = "https://api.currencybeacon.com/v1/latest";
+        url += "&symbols="+"EUR,CNH,JPY,KRW";
+        url += "?api_key="+serviceKey;
         // 3. WebClient 객체 이용한 api 요청 하고 응답받기 
         Map<String,Object> response =  webClient.get() // .http메소드명    http GET메소드
                 .uri( url ) // uri는 http 주소상에 자원(쿼리스트링) 까지 포함
